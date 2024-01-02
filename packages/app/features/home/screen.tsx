@@ -22,9 +22,8 @@ export function HomeScreen() {
     <YStack f={1} jc="center" ai="center" p="$4" space>
       <YStack space="$4" maw={600}>
         <H1 ta="center">Welcome to Tamagui.</H1>
-        <Paragraph ta="center">
-          Here's a basic starter to show navigating from one screen to another. This screen uses the
-          same code on Next.js and React Native.
+        <Paragraph ta="center" fontWeight="700">
+          Here's a basic starter to show navigating from one screen to another. Note that this text is bolded.
         </Paragraph>
 
         <Separator />
@@ -46,7 +45,7 @@ export function HomeScreen() {
       </YStack>
 
       <XStack>
-        <Button {...linkProps}>Link to user</Button>
+        <Button {...linkProps} fontWeight="700">Link to user (this text should be bold)</Button>
       </XStack>
 
       <SheetDemo />
